@@ -47,11 +47,23 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), SlokActivity.class);
                 try{
-                    int i = Integer.parseInt(chapter.getText().toString());
-                    int j = Integer.parseInt(verse.getText().toString());
-                    intent.putExtra(EXTRA_NAME_1, i);
-                    intent.putExtra(EXTRA_NAME_2, j);
-                    startActivity(intent);
+                    if(chapter.getText().toString().isEmpty() || verse.getText().toString().isEmpty()){
+                        Toast.makeText(MainActivity.this, "Fields Can't be empty", Toast.LENGTH_SHORT).show();
+                    }else {
+                        int i = Integer.parseInt(chapter.getText().toString());
+                        int j = Integer.parseInt(verse.getText().toString());
+                        intent.putExtra(EXTRA_NAME_1, i);
+                        intent.putExtra(EXTRA_NAME_2, j);
+                        if (i <= 18 && i>0) {
+                            if(isCorrectVerseNumber(i, j)){
+                                startActivity(intent);
+                            }else{
+                                Toast.makeText(MainActivity.this, "Enter Correct Verse NUmber", Toast.LENGTH_SHORT).show();
+                            }
+                        } else {
+                            Toast.makeText(MainActivity.this, "Chapter number should be in between 1 to 18", Toast.LENGTH_SHORT).show();
+                        }
+                    }
                 } catch(NumberFormatException ex){ // handle your exception
                     Toast.makeText(getApplicationContext(), ex.toString(), Toast.LENGTH_SHORT).show();
                 }
@@ -62,6 +74,15 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+    }
+
+    boolean isCorrectVerseNumber(int chapNumber, int VerseNumber){
+        int[] maxVerseNumber = {47, 72, 43, 42, 29, 47, 30, 28, 34, 42, 55, 20, 34, 27, 20, 24, 28, 78};
+        if(VerseNumber>maxVerseNumber[chapNumber-1]){
+            return false;
+        }else{
+            return true;
+        }
     }
 
 

@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">Bhagawad Gita</string>
+    <string name="app_name">गीता श्लोकाः</string>
+    <string name="generate_slok">Generate Slok</string>
+    <string name="or">-----OR-----</string>
+    <string name="enter_verse_no">Enter Verse No.</string>
+    <string name="enter_chapter_no">Enter Chapter No.</string>
+    <string name="view_chapters">View Chapters</string>
+    <string name="chapter_1">Chapter-1</string>
+    <string name="the_first_chapter_of_the_bhagavad_gita_arjuna_vishada_yoga_introduces_the_setup_the_setting_the_characters_and_the_circumstances_that_led_to_the_epic_battle_of_mahabharata_fought_between_the_pandavas_and_the_kauravas_it_outlines_the_reasons_that_led_to_the_revelation_of_the_of_bhagavad_gita_nas_both_armies_stand_ready_for_the_battle_the_mighty_warrior_arjuna_on_observing_the_warriors_on_both_sides_becomes_increasingly_sad_and_depressed_due_to_the_fear_of_losing_his_relatives_and_friends_and_the_consequent_sins_attributed_to_killing_his_own_relatives_so_he_surrenders_to_lord_krishna_seeking_a_solution_thus_follows_the_wisdom_of_the_bhagavad_gita">The first chapter of the Bhagavad Gita - \"Arjuna Vishada Yoga\" introduces the setup, the setting, the characters and the circumstances that led to the epic battle of Mahabharata, fought between the Pandavas and the Kauravas. It outlines the reasons that led to the revelation of the of Bhagavad Gita.\nAs both armies stand ready for the battle, the mighty warrior Arjuna, on observing the warriors on both sides becomes increasingly sad and depressed due to the fear of losing his relatives and friends and the consequent sins attributed to killing his own relatives. So, he surrenders to Lord Krishna, seeking a solution. Thus, follows the wisdom of the Bhagavad Gita.</string>
+    <string name="gita_verses">गीता श्लोकाः</string>
+    <string name="description">Loading...</string>
+    <string name="meaning">Loading...</string>
+    <string name="gita_shlok">Loading...</string>
 </resources>

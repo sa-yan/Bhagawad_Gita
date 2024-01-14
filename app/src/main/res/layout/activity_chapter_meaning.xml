@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChapterMeaningActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chapter_1"
+        android:id="@+id/chapNumber"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/gita_font"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:id="@+id/summary"
+        android:text='@string/the_first_chapter_of_the_bhagavad_gita_arjuna_vishada_yoga_introduces_the_setup_the_setting_the_characters_and_the_circumstances_that_led_to_the_epic_battle_of_mahabharata_fought_between_the_pandavas_and_the_kauravas_it_outlines_the_reasons_that_led_to_the_revelation_of_the_of_bhagavad_gita_nas_both_armies_stand_ready_for_the_battle_the_mighty_warrior_arjuna_on_observing_the_warriors_on_both_sides_becomes_increasingly_sad_and_depressed_due_to_the_fear_of_losing_his_relatives_and_friends_and_the_consequent_sins_attributed_to_killing_his_own_relatives_so_he_surrenders_to_lord_krishna_seeking_a_solution_thus_follows_the_wisdom_of_the_bhagavad_gita'
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        />
+
+</LinearLayout>

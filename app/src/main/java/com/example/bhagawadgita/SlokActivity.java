@@ -55,7 +55,6 @@ public class SlokActivity extends AppCompatActivity {
             public void onResponse(JSONObject response) {
                 try {
                     slok.setText(response.getString("text"));
-//                    slok.setText("\"" + response.getString("text") + "\"");
 
                     JSONArray jsonArray = response.getJSONArray("translations");
                     JSONObject object1=jsonArray.getJSONObject(1);

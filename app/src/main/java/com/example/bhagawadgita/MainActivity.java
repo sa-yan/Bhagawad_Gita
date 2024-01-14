@@ -26,10 +26,10 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static final String EXTRA_NAME_1 = "com.example.unitconverter.EXTRA_NAME_1";
-    public static final String EXTRA_NAME_2 = "com.example.unitconverter.EXTRA_NAME_2";
+    public static final String EXTRA_NAME_1 = "com.example.bhagawadgita.EXTRA_NAME_1";
+    public static final String EXTRA_NAME_2 = "com.example.bhagawadgita.EXTRA_NAME_2";
     EditText chapter, verse;
-    Button btn;
+    Button btn, btnChap;
     RequestQueue queue;
 
     @Override
@@ -38,9 +38,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         btn = findViewById(R.id.btn);
+        btnChap=findViewById(R.id.btnToChapActivity);
         chapter=findViewById(R.id.chapterEditText);
         verse=findViewById(R.id.verseEditText);
         queue= Volley.newRequestQueue(getApplicationContext());
+
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,6 +72,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btnChap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent mintent=new Intent(getApplicationContext(), ChapterActivity.class);
+                startActivity(mintent);
+            }
+        });
 
 
 

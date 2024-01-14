@@ -29,12 +29,12 @@
               <TextView
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
-                  android:text="Gita Verses"
-                  android:fontFamily="@font/gita_font"
+                  android:text="@string/gita_verses"
+                  android:fontFamily="@font/yatraone_regular"
                   android:layout_marginTop="15dp"
                   android:textColor="#FFA659"
                   android:textStyle="bold"
-                  android:textSize="20sp"
+                  android:textSize="25sp"
                   />
               <ProgressBar
                   android:layout_width="wrap_content"
